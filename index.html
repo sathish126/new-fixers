@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fixers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- News Section with Scrolling Animation (Visible on all screen sizes) -->
+<div class="bg-blue-100 py-2 overflow-hidden sticky top-0 z-50">
+    <div class="text-blue-800 text-center font-bold text-lg px-4">
+        ✦ Websites at Rs 499 ✦ 10+ Happy Clients ✦ 4.8/5 Customer Review ✦ RoboKits ✦
+    </div>
+</div>
+
+<!-- Header Section -->
+<header class="bg-white shadow-md sticky top-10 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="./images/logo.png" alt="Company Logo" class="h-12 w-30 mr-2">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="relative">
+            <ul class="flex space-x-8">
+                <!-- About Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 font-semibold">About</a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 space-y-1 w-40">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Career</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Internships</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Consultant</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 font-semibold">Services</a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 space-y-1 w-40">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Website Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">APP Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">RoboKits Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Project Development</a></li>
+                    </ul>
+                </li>
+
+                <!-- Other Links -->
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Static Section with image on the right -->
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between">
+        <!-- Left Side Content -->
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                Web & App Development Solutions
+            </h1>
+            <p class="text-2xl text-blue-600 mb-6">
+                Transform Your Ideas into Reality with TheFixers
+            </p>
+            <p class="text-lg text-gray-600 mb-8">
+                We specialize in delivering high-quality, custom websites and mobile applications tailored to meet your business needs. Whether it's a static website, a dynamic platform, or comprehensive maintenance services, we ensure cutting-edge solutions—all within your budget.
+            </p>
+            <!-- Let's Connect Button -->
+            <button href="/index.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg">
+                Let's Talk &rarr;
+            </button>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="md:w-1/2">
+            <img src="./images/image-1.png" alt="Web Development Image" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+</section>
+<!-- Tech Stacks Section (Single Container with Floating Icons) -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-4 text-center relative">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12">
+            Our Technology Stack
+        </h2>
+        <div id="floating-icons" class="floating-icons-container relative h-64 w-full mx-auto">
+            <!-- HTML Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="h-16 w-16">
+            </div>
+
+            <!-- CSS Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="h-16 w-16">
+            </div>
+
+            <!-- JavaScript Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-16 w-16">
+            </div>
+            
+            <!-- Figma Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="h-16 w-16">
+            </div>
+
+            <!-- React Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-16 w-16">
+            </div>
+
+            <!-- Node.js Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="h-16 w-16">
+            </div>
+
+            <!-- Python Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="h-16 w-16">
+            </div>
+
+            <!-- Tailwind CSS Icon -->
+            <div class="icon-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="h-16 w-16">
+            </div>
+
+            <!-- Bootstrap Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="h-16 w-16">
+            </div>
+
+            <!-- Angular Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="h-16 w-16">
+            </div>
+
+            <!-- MongoDB Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="h-16 w-16">
+            </div>
+
+            <!-- SQL Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="h-16 w-16">
+            </div>
+
+            <!-- PHP Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="h-16 w-16">
+            </div>
+
+            <!-- Django Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="h-16 w-16">
+            </div>
+
+            <!-- AWS Icon -->
+            <div class="icon-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="h-16 w-16">  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Works Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Our Works</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./images/logo.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Login-page-with-database</h3>
+                    <p class="text-gray-600 mb-4"> It includes user registration and login functionalities with secure password storage and session management.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/sathish126/Login-page-with-database.git" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">GitHub</a>
+                        <a href="https://project1-live.com" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./images/logo.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Project 2</h3>
+                    <p class="text-gray-600 mb-4">Description of Project 2. This is a brief overview of the project.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/username/project2" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">GitHub</a>
+                        <a href="https://project2-live.com" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./images/logo.png" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Project 3</h3>
+                    <p class="text-gray-600 mb-4">Description of Project 3. This is a brief overview of the project.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/username/project3" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">GitHub</a>
+                        <a href="https://project3-live.com" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Team Section -->
+<section class="bg-gray-100 py-8">
+    <div class="container mx-auto px-1">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Meet Our Team</h2>
+
+        <!-- Scrollable container for all team members -->
+        <div class="flex flex-nowrap overflow-x-auto space-x-4 scrollbar-hide">
+            <!-- Team Member 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-64 flex-shrink-0">
+                <img src="./images/team/sathish.jpg" alt="Sathish P" class="h-32 w-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-lg font-bold text-center text-gray-800">Sathish P</h3>
+                <p class="text-center text-gray-600 mb-4">Founder</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/sathishkumarp126/" class="text-blue-600 hover:text-blue-800">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://github.com/sathish126" class="text-gray-800 hover:text-gray-600">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-64 flex-shrink-0">
+                <img src="https://via.placeholder.com/150" alt="Hemanth" class="h-32 w-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-lg font-bold text-center text-gray-800">Hemanth</h3>
+                <p class="text-center text-gray-600 mb-4">Full Stack Developer</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="" class="text-blue-600 hover:text-blue-800">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="" class="text-gray-800 hover:text-gray-600">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-64 flex-shrink-0">
+                <img src="https://via.placeholder.com/150" alt="Abin" class="h-32 w-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-lg font-bold text-center text-gray-800">Abin S</h3>
+                <p class="text-center text-gray-600 mb-4">UI/UX Designer</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="" class="text-blue-600 hover:text-blue-800">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="" class="text-gray-800 hover:text-gray-600">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-64 flex-shrink-0">
+                <img src="https://via.placeholder.com/150" alt="Athish K" class="h-32 w-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-lg font-bold text-center text-gray-800">Athish K</h3>
+                <p class="text-center text-gray-600 mb-4">Technical Lead</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/athish-k-s-8a64342a3/" class="text-blue-600 hover:text-blue-800">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://github.com/Athish06" class="text-gray-800 hover:text-gray-600">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 w-64 flex-shrink-0">
+                <img src="./images/team/nivashini.jpg" alt="Nivashini N" class="h-32 w-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-lg font-bold text-center text-gray-800">Nivashini N</h3>
+                <p class="text-center text-gray-600 mb-4">UI/UX Designer</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/nivashini-n-493824214/" class="text-blue-600 hover:text-blue-800">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://www.linkedin.com/in/nivashini-n-493824214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-800 hover:text-gray-600">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
