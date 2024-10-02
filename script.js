@@ -7,3 +7,4 @@ techStack.addEventListener('mouseover', () => {
 techStack.addEventListener('mouseout', () => {
     techStack.style.animationPlayState = 'running';
 });
+
