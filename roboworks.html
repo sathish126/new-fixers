@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fixers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Styles -->
+    <style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10vmin;
+        overflow: hidden;
+        flex-wrap: wrap; /* Adjust for responsiveness */
+
+        .card {
+            flex: 1 1 100%; /* Adjusts card size on smaller screens */
+            transition: all 1s ease-in-out;
+            height: 65vmin;
+            position: relative;
+            
+            .card__head {
+                color: black;
+                background: rgba(255, 30, 173, 0.75);
+                padding: 0.25em;
+                transform: rotate(-90deg);
+                transform-origin: 0% 0%;
+                transition: all 0.5s ease-in-out;
+                min-width: 10%;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                font-size: 1em;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                flex-grow: 10;
+                img {
+                    filter: grayscale(0);
+                }
+                .card__head {
+                    text-align: center;
+                    top: calc(100% - 2em);
+                    color: white;
+                    background: rgba(0, 0, 0, 0.5);
+                    font-size: 2em;
+                    transform: rotate(0deg) skew(-5deg);
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 1s ease-in-out;
+                filter: grayscale(100%);
+            }
+            
+            &:not(:last-child) {
+                margin-right: 1em;
+            }
+        }
+    }
+    /* Center-right Floating "Get Quote" Button */
+    .floating-button {
+        position: fixed;
+        top: 70%;
+        right: 20px;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        background-color: #1d4ed8; /* Blue color */
+        color: white;
+        border-radius: 50px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease-in-out;
+        z-index: 50;
+    }
+    
+    .floating-button:hover {
+        background-color: #2563eb; /* Darker blue on hover */
+    }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans bg-gradient-to-r from-gray-100 via-blue-100 to-gray-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800">
+
+
+    <!-- Card Section -->
+    <div class="container flex flex-col md:flex-row md:flex-wrap">
+        <div class="card">
+            <img src="./images/project/R-7.jpeg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-6.jpeg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-5.jpeg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-4.jpg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-3.jpg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-2.jpeg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+        <div class="card">
+            <img src="./images/project/R-1.jpg" alt="Robo Works">
+            <div class="card__head">Robo Works</div>
+        </div>
+    </div>
+
+    
+    <!-- Floating Get Quote Button -->
+    <a href="./contact.html" class="floating-button">Get Quote</a>
+  
+
+    </script>
+</body>
+</html>

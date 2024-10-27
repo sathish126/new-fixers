@@ -97,6 +97,24 @@
             transform: scale3d(1, 1, 1);
         }
     }
+    /* Center-right Floating "Get Quote" Button */
+    .floating-button {
+        position: fixed;
+        top: 70%;
+        right: 20px;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        background-color: #1d4ed8; /* Blue color */
+        color: white;
+        border-radius: 50px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease-in-out;
+        z-index: 50;
+    }
+    
+    .floating-button:hover {
+        background-color: #2563eb; /* Darker blue on hover */
+    }
 </style>
 
 </head>
@@ -125,20 +143,20 @@
                 <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
                     <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Career</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Internships</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Consultant</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Consultant</a></li>
                 </ul>
             </div>
             <!-- Services Dropdown -->
             <div class="relative group">
                 <a href="#" class="text-gray-700 hover:text-blue-500 font-semibold">Services</a>
                 <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Website Development</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">App Development</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">RoboKits Development</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Project Development</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Website Development</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">App Development</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">RoboKits Development</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Project Development</a></li>
                 </ul>
             </div>
-            <a href="#" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
+            <a href="contact.html" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
         </nav>
 
         <!-- Mobile Menu Toggle Button -->
@@ -160,7 +178,7 @@
                 <ul id="about-dropdown" class="hidden pl-8 py-2">
                     <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">Career</a></li>
                     <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">Internships</a></li>
-                    <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">Consultant</a></li>
+                    <li><a href="contact.html" class="block py-1 text-gray-600 hover:text-blue-500">Consultant</a></li>
                 </ul>
             </li>
             <li class="border-b border-gray-200">
@@ -168,14 +186,14 @@
                     Services <i class="fas fa-chevron-down"></i>
                 </button>
                 <ul id="services-dropdown" class="hidden pl-8 py-2">
-                    <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">Website Development</a></li>
-                    <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">App Development</a></li>
-                    <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">RoboKits Development</a></li>
-                    <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-500">Project Development</a></li>
+                    <li><a href="contact.html" class="block py-1 text-gray-600 hover:text-blue-500">Website Development</a></li>
+                    <li><a href="contact.html" class="block py-1 text-gray-600 hover:text-blue-500">App Development</a></li>
+                    <li><a href="contact.html" class="block py-1 text-gray-600 hover:text-blue-500">RoboKits Development</a></li>
+                    <li><a href="contact.html" class="block py-1 text-gray-600 hover:text-blue-500">Project Development</a></li>
                 </ul>
             </li>
             <li class="border-b border-gray-200">
-                <a href="#" class="block px-4 py-2 font-semibold text-gray-700 hover:bg-gray-100">Contact</a>
+                <a href="contact.html" class="block px-4 py-2 font-semibold text-gray-700 hover:bg-gray-100">Contact</a>
             </li>
         </ul>
     </div>
@@ -197,6 +215,13 @@
     </div>
 </section>
 
+
+
+ <!-- Floating Get Quote Button -->
+ <a href="./contact.html" class="floating-button">Get Quote</a>
+
+
+
 <!-- Services Section -->
 <section id="services" class="bg-gray-50 py-16">
     <div class="container mx-auto px-4">
@@ -208,7 +233,7 @@
                     <i class="fas fa-code fa-4x text-blue-600"></i>
                     <h3 class="text-xl font-semibold mt-4">Website Development</h3>
                     <p>Custom websites designed to fit your business goals.</p>
-                    <button class="button" onclick="window.location.href='website-development.html'">
+                    <button class="button" onclick="window.location.href='contact.html'">
                         <span class="text">GET</span>
                         <span class="svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 38 15" fill="none">
@@ -223,7 +248,7 @@
                     <i class="fas fa-mobile-alt fa-4x text-blue-600"></i>
                     <h3 class="text-xl font-semibold mt-4">App Development</h3>
                     <p>We build user-friendly mobile apps to enhance customer experience.</p>
-                    <button class="button" onclick="window.location.href='app-development.html'">
+                    <button class="button" onclick="window.location.href='contact.html'">
                         <span class="text">GET</span>
                         <span class="svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 38 15" fill="none">
@@ -238,7 +263,7 @@
                     <i class="fas fa-robot fa-4x text-blue-600"></i>
                     <h3 class="text-xl font-semibold mt-4">RoboKits Development</h3>
                     <p>Cutting-edge robotics kits for educational and research purposes.</p>
-                    <button class="button" onclick="window.location.href='robokits-development.html'">
+                    <button class="button" onclick="window.location.href='contact.html'">
                         <span class="text">GET</span>
                         <span class="svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 38 15" fill="none">
@@ -253,7 +278,7 @@
                     <i class="fas fa-cogs fa-4x text-blue-600"></i>
                     <h3 class="text-xl font-semibold mt-4">Project Development</h3>
                     <p>End-to-end project development services tailored to your needs.</p>
-                    <button class="button" onclick="window.location.href='project-development.html'">
+                    <button class="button" onclick="window.location.href='contact.html'">
                         <span class="text">GET</span>
                         <span class="svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 38 15" fill="none">
@@ -267,7 +292,7 @@
     </div>
 </section>
 
-<!-- Our Works Section with Horizontal Scroll -->
+ <!-- Our Works Section -->
 <section class="py-16">
     <div class="container mx-auto px-4">
         <!-- Section Title -->
@@ -275,45 +300,25 @@
   
         <!-- Website Works -->
         <h3 class="text-3xl font-bold text-gray-700 dark:text-gray-300 mb-6">Website Works</h3>
-        <div class="relative">
-            <!-- Left Scroll Icon -->
-            <button onclick="scrollLeft('website-scroll')" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                <i class="fas fa-chevron-left text-gray-800 dark:text-gray-100"></i>
-            </button>
-  
-            <div id="website-scroll" class="overflow-x-auto scrollbar-hide scroll-smooth flex space-x-4 px-8">
-                <!-- Website Work 1 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/prod resources.png" alt="Website Work 1" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- Website Work 2 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/prod engage.png" alt="Website Work 2" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- Website Work 3 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/N-2.jpg" alt="Website Work 3" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- Website Work 4 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/N-1.jpg" alt="Website Work 4" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- Website Work 5 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/N-3.jpg" alt="Website Work 5" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Website Work 1 -->
+            <div class="p-2 transition-transform duration-300 hover-effect">
+                <img src="./images/project/N-2.jpg" alt="Website Work 1" class="w-full h-auto object-cover rounded-lg shadow-lg">
             </div>
   
-            <!-- Right Scroll Icon -->
-            <button onclick="scrollRight('website-scroll')" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                <i class="fas fa-chevron-right text-gray-800 dark:text-gray-100"></i>
-            </button>
+            <!-- Website Work 2 -->
+            <div class="p-2 transition-transform duration-300 hover-effect">
+                <img src="./images/project/N-3.jpg" alt="Website Work 2" class="w-full h-auto object-cover rounded-lg shadow-lg">
+            </div>
         </div>
   
+        <!-- View More Works Button -->
+        <div class="mt-6 text-center">
+            <a href="./webworks.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                View More Works
+            </a>
+        </div>
+
         <!-- Decorative Divider -->
         <div class="mt-16 mb-12 text-center">
             <hr class="border-gray-400 dark:border-gray-500">
@@ -321,55 +326,32 @@
   
         <!-- RoboKits Works -->
         <h3 class="text-3xl font-bold text-gray-700 dark:text-gray-300 mt-12 mb-6">RoboKits Works</h3>
-        <div class="relative">
-            <!-- Left Scroll Icon -->
-            <button onclick="scrollLeft('robokit-scroll')" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                <i class="fas fa-chevron-left text-gray-800 dark:text-gray-100"></i>
-            </button>
-  
-            <div id="robokit-scroll" class="overflow-x-auto scrollbar-hide scroll-smooth flex space-x-4 px-8">
-                <!-- RoboKit Work 1 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/R-5.jpeg" alt="RoboKit Work 1" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- RoboKit Work 2 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/R-6.jpeg" alt="RoboKit Work 2" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- RoboKit Work 3 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/R-2.jpeg" alt="RoboKit Work 3" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- RoboKit Work 4 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/R-7.jpeg" alt="RoboKit Work 4" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
-  
-                <!-- RoboKit Work 5 -->
-                <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 transition-transform duration-300 hover-effect">
-                    <img src="./images/project/R-4.jpg" alt="RoboKit Work 5" class="w-full h-auto object-cover rounded-lg shadow-lg">
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- RoboKit Work 1 -->
+            <div class="p-2 transition-transform duration-300 hover-effect">
+                <img src="./images/project/R-5.jpeg" alt="RoboKit Work 1" class="w-full h-auto object-cover rounded-lg shadow-lg">
             </div>
   
-            <!-- Right Scroll Icon -->
-            <button onclick="scrollRight('robokit-scroll')" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                <i class="fas fa-chevron-right text-gray-800 dark:text-gray-100"></i>
-            </button>
+            <!-- RoboKit Work 2 -->
+            <div class="p-2 transition-transform duration-300 hover-effect">
+                <img src="./images/project/R-6.jpeg" alt="RoboKit Work 2" class="w-full h-auto object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+  
+        <!-- View More Works Button -->
+        <div class="mt-6 text-center">
+            <a href="roboworks.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                View More Works
+            </a>
         </div>
     </div>
-  </section>
-
-
-
+</section>
 
 
 
 <!-- Team Section -->
 <section class="bg-gray-100 py-8">
-    <div class="container mx-auto px-4">
+   
         <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Meet Our Team</h2>
   
         <!-- Scrollable container for all team members -->
@@ -543,7 +525,7 @@
             </div>
   
         </div>
-    </div>
+   
   </section>
 
 <!-- Footer Section -->
@@ -553,24 +535,14 @@
             <h3 class="text-white text-xl font-semibold mb-4">About The Fixers</h3>
             <p>The Fixers is a leading development company providing web, app, and RoboKits solutions for businesses.</p>
         </div>
-        <div class="quick-links">
-            <h3 class="text-white text-xl font-semibold mb-4">Quick Links</h3>
-            <ul class="space-y-2">
-                <li><a href="#" class="hover:text-blue-500">Home</a></li>
-                <li><a href="#services" class="hover:text-blue-500">Services</a></li>
-                <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
-                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-            </ul>
-        </div>
+        <div></div>
         <div id="contact">
             <h3 class="text-white text-xl font-semibold mb-4">Contact Us</h3>
             <p><i class="fas fa-envelope mr-2"></i>thefixerservice26@gmail.com</p>
             <p><i class="fas fa-map-marker-alt mr-2"></i>Coimbatore, Tamil Nadu, India</p>
             <div class="mt-4 flex space-x-4">
-                <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-blue-400 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-pink-500 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-400 hover:text-gray-500"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/thefixers.info/profilecard/?igsh=ZTJlemYxamtobjBi" class="text-pink-500 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/thefixers26/" class="text-gray-400 hover:text-gray-500"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
